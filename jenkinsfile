@@ -16,6 +16,7 @@ stage('build')
  sh "${mavenHome}/bin/mvn sonar:sonar"
  }
 
+/*
 stage('UploadArtifactIntoNexus')
  {
  sh "${mavenHome}/bin/mvn deploy"
@@ -27,6 +28,7 @@ sshagent(['62f7c7a8-6557-40c4-a80c-e568007e0924'])
 sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.239.28.138:/opt/apache-tomcat-9.0.45/webapps"
 }
 }
+/*
 stage('Sendemailnotification')
 {
 emailext body: '''Build is over - Scripted way

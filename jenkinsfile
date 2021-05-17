@@ -15,7 +15,6 @@ stage('build')
  {
  sh "${mavenHome}/bin/mvn sonar:sonar"
  }
-
 /*
 stage('UploadArtifactIntoNexus')
  {

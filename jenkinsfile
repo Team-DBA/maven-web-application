@@ -1,0 +1,36 @@
+node
+{
+ def mavenHome = tool name: "maven3.8.1"
+ stage('checkoutcode')
+ {
+ git branch: 'development', credentialsId: 
+ '93465c72-a565-42d1-a06b-d992124f211c', url: 
+ 'https://github.com/Team-DBA/maven-web-application.git'
+ }
+stage('build')
+ {
+ sh "${mavenHome}/bin/mvn clean package"
+ }
+ stage('ExecuteSonarQubeReport')
+ {
+ sh "${mavenHome}/bin/mvn sonar:sonar"
+ }
+
+stage('UploadArtifactIntoNexus')
+ {
+ sh "${mavenHome}/bin/mvn deploy"
+ }
+ stage('DeployAppIntoTomcatServer')
+{
+sshagent(['62f7c7a8-6557-40c4-a80c-e568007e0924']) 
+{
+sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.239.28.138:/opt/apache-tomcat-9.0.45/webapps"
+}
+}
+stage('Sendemailnotification')
+{
+emailext body: '''Build is over - Scripted way
+Regards,
+Sushant.''', subject: 'Build is over - Scripted way', to: 'rashinkar.sushant@gmail.com'
+}
+}

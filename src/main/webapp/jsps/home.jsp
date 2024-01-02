@@ -17,13 +17,13 @@
 		<img src="images/mithunlogo.jpg" alt="" width="100">
 	</span>
 	<span style="font-weight: bold;">
-		Mithun Software Solutions, 
-		Martha Halli,
-		Bangalore,
-		+91-9980923226,
-		devopstrainingbr@gmail.com
+		Sushant Sunil Rashinkar, 
+		8/277 Melton Road,
+		Northgate, QLD, 4013,
+		+61-468738979,
+		rashinkar.sushant@gmail.com
 		<br>
-		<a href="mailto:devopstrainingblr@gmail.com">Mail to Mithun Technologies</a>
+		<a href="mailto:rashinkar.sushant@gmail.com">Mail to Sushant</a>
 	</span>
 </div>
 <hr>

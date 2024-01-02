@@ -9,7 +9,7 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to SUSHANT's Software Solutions.</h1>
+<h1 align="center">Welcome to SUSHANT's Software Solutions. One stop shop for your devops needs</h1>
 <h1 align="center">Welcome to Sushant's Software Solutions. End to end course on DevOps and AWS. Starting with SCM tools, build, deploy tools and containerization !</h1>
 <hr>
 <div style="text-align: center;">

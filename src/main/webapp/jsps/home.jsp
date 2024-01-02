@@ -14,7 +14,7 @@
 <hr>
 <div style="text-align: center;">
 	<span>
-		<img src="images/mithunlogo.jpg" alt="" width="100">
+		<img src="images/WIN_20220615_14_57_53_Pro.jpg" alt="" width="100">
 	</span>
 	<span style="font-weight: bold;">
 		Sushant Sunil Rashinkar, 
